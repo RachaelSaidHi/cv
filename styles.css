@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.cv-container {
+    background-color: white;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.profile-photo {
+    margin-left: 20px;
+}
+
+.profile-photo img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.profile {
+    margin-bottom: 30px;
+}
+
+.education-item, 
+.experience-item {
+    margin-bottom: 20px;
+}
+
+.education-item h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.education-item h3 .date {
+    font-size: 0.9em;
+    font-weight: normal;
+}
+
+.institution {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.experience-item h3 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.date {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.achievements ul, 
+.skills ul, 
+.qualities ul, 
+.hobbies ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.achievements li {
+    margin-bottom: 10px;
+}
+
+.two-column {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.column {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .profile-photo {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .text-content {
+        text-align: center;
+    }
+
+    .two-column {
+        flex-direction: column;
+    }
+    
+    .cv-container {
+        padding: 20px;
+    }
+}
